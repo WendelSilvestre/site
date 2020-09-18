@@ -6,10 +6,11 @@
 }
 
 body {
-  background-image: url('../img/fundo.jpg');
-  background-size:  70vh;
+  background-image: url('../img/fundo1.png');
+  background-color: #e4e4e6;
+  background-size:  100%;
+  background-repeat: no-repeat;
   font-family: Comic Sans;
-  height: 100vh;
   font-size: 12px;
 }
 
