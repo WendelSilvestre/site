@@ -38,60 +38,49 @@ header {
 .site-title{
   font-family:'Kalam', cursive;
   font-size: 7em;
-  color:#13edd7;
+  color: white;
 }
 
 .site-subtitle {
   font-style: italic;
-  color: #13edd7;
+  color: #187ec7;
   font-size: 1.5em;
 }
 
-.img-portfolio{
-  height: 250px;
-  width: 350px;
-  object-fit: cover;
-  object-position: center;
-  padding: 1em;
-  transition: transform 500ms;
-}
-
-.img-portfolio:hover{
-  transform: scale(1.2);
-}
-
-.portfolio {
-  padding: 4em;
-  color: whitesmoke;
-}
-
-.contato h2,
-.portfolio h2{
+.biografia h2{
+  width: 100%;
   font-size: 3em;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-family: Comic Sans;
-  background-color: whitesmoke;
-  border-left: 6px solid black;
-  border-right: 6px solid black;
-  border-top: 6px solid black;
-  border-bottom: 6px solid black;
-  color: black;
+  color: #187ec7;
 }
 
-.grid {
-  display: grid;
-  gap: 8em;
-  grid-template-columns: 300px 300px;
-  justify-content: center;
+.img-biografia {
+  margin-left:7%;
+
 }
 
-.portfolio figure {
+.skill h2{
+  width: 100%;
+  font-size: 3em;
   text-align: center;
+  margin-bottom: 4em;
+  font-family: Comic Sans;
+  color: #187ec7;
+}
+
+.contato h2{
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 4em;
+  font-family: Comic Sans;
+  color: #187ec7;
 }
 
 .contato a {
-  color: #13edd7;
+  color: #187ec7;
   font-size: 6em;
   text-align: center;
 }
