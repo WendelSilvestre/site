@@ -5,20 +5,30 @@
   box-sizing: border-box;
 }
 
+/*Tela Celular*/
+
+body{
+  background-image: url('../img/fundo1.png');
+  background-color: #e4e4e6;
+  background-size:  100%;
+  background-repeat: no-repeat;
+  font-family: 'Comic Sans';
+  font-size: 18px;
+}
+
+
+
+
+
+/* Tela computador*/
+@media(min-width: 990px){
 body {
   background-image: url('../img/fundo1.png');
   background-color: #e4e4e6;
   background-size:  100%;
   background-repeat: no-repeat;
-  font-family: Comic Sans;
-  font-size: 12px;
-}
-
-/* Se a tela tiver pelo menos 400px (é um If)*/
-@media (min-width: 500px ) {
-  body{
-    font-size: 18px;
-  }
+  font-family: 'Comic Sans';
+  font-size: 18px;
 }
 
 header {
@@ -36,7 +46,7 @@ header {
 }
 
 .site-title{
-  font-family:'Kalam', cursive;
+  font-family: 'Kalam', cursive;
   font-size: 7em;
   color: white;
 }
@@ -47,22 +57,29 @@ header {
   font-size: 1.5em;
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: 800px 300px ;
-}
-
 .biografia h2{
   width: 100%;
   font-size: 3em;
   text-align: center;
   margin-bottom: 1em;
-  font-family: Comic Sans;
+  font-family: 'Comic Sans';
   color: #187ec7;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: 840px 500px ;
+}
+
+.grid h1{
+  position: absolute;
+  left: 30%;
+
+}
+
+
 .img-biografia {
-  margin-left:7%;
+  margin-left: 10%;
 
 }
 
@@ -71,7 +88,7 @@ header {
   font-size: 3em;
   text-align: center;
   margin-bottom: 4em;
-  font-family: Comic Sans;
+  font-family: 'Comic Sans';
   color: #187ec7;
 }
 
@@ -80,7 +97,7 @@ header {
   font-size: 3em;
   text-align: center;
   margin-bottom: 4em;
-  font-family: Comic Sans;
+  font-family: 'Comic Sans';
   color: #187ec7;
 }
 
@@ -103,4 +120,6 @@ header {
 
 .contato .icons{
     text-align: center;
+}
+
 }
