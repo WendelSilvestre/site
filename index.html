@@ -6,7 +6,10 @@
     <title>Weldel</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/469313654c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -15,46 +18,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-    <header>
-        <div>
+  <header>
+
+    <!--Tela do celular-->
+    <div id="secao-01" class="secao">
+      <div class="hide-on-large-only">
+        <h1 class="site-title">Wendel Silvestre</h1>
+          <h2 class="site-subtitle">Venha descobrir o quão incrível eu <br>sou</h2>
+      </div>
+      <span class="icone-scroll">
+        <span class="scroll-next scroll"></span>
+      </span>
+    </div>
+
+      <section class="biografia"  class="hide-on-large-only">
+        <div id="secao-02" class="secao">
+          <h1 class="hide-on-large-only">Biografia</h1>
+            <img class="img-biografia" class="hide-on-large-only" src="./img/perfil.png">
+        </div>
+      </section>
+
+    <!--Tela do computador-->
+        <div  class="hide-on-med-and-down">
         <h1 class="site-title">.</h1>
-        <h2 class="site-subtitle">Venha descobrir o quão incrível eu sou:</h2>
+        <h2 class="site-subtitle"></h2>
         </div>
-      </header>
-      <section class="biografia" >
+  </header>
+
+      <section class="biografia hide-on-med-and-down" >
         <h2>Biografia</h2>
-        <div class="grid">
+          <div class="grid  hide-on-med-and-down">
             <img class="img-biografia" src="./img/Biografia.png">
-                  <img class="img-perfil" src="./img/perfil.png">
-            <h1>teste<h1>
-        </div>
-
-
-        <!--<figure><div class="grid">
-          <img class="img-biografia" src="./img/Nerdtrip-My-Hero-Academia-Boku-no-Hero-2.jpg" alt="eCommerce">
-          <figcaption>Boku-no-hero</figcaption>
-        </figure>
-        <figure>
-          <img class="img-biografia" src="./img/Konosuba-Filme-da-animação-é-anunciado-para-2019.jpg" alt=">Mobile">
-          <figcaption>Konosuba</figcaption>
-        </figure>
-        <figure>
-          <img class="img-biografia" src="./img/haikyuu.jpg" alt="Web design">
-          <figcaption>Haikyuu</figcaption>
-        </figure>
-        <figure>
-          <img class="img-biografia" src="./img/images.jpg" alt="Projetos pessoais">
-          <figcaption>Naruto</figcaption>
-        </div></figure>
-       -->
-
+                <img class="img-perfil" src="./img/perfil.png">
+              <h1>teste<h1>
+          </div>
       </section>
-    <section class="skill" >
+
+    <section class="skill hide-on-med-and-down"> <!--mudar esse hide dps-->
         <h2>skill</h2>
-
-      </section>
     </section>
-    <section class="contato" id="contato">
+
+
+    <section class="contato hide-on-med-and-down" id="contato"> <!--mudar esse hide dps-->
       <h2>Contato</h2>
       <div class="gridicons">
         <a target="_blank" href="https://github.com/wendelsilvestre">
@@ -70,5 +75,27 @@
         </a>
       </div>
     </section>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        var _AlturaDocumento = $(window).height(); //pega altura da janela
+      function AlturaSecao() {
+        $('.secao').height(_AlturaDocumento); //atribui o valor da variável a todas as divs com a classe secao
+      }
+
+      function ScrollSecao() {
+        console.log('entrou');
+        var body = $('html, body');
+        if($(this).parent('.secao').is('#secao-01')) {
+          //verifica se está na primeira seção e rola para a segunda
+          body.animate({scrollTop: _AlturaDocumento}, '500');
+        }
+      }
+
+      $('.icone-scroll').click(ScrollSecao); //chama a função na ação de click no ícone
+
+      $(AlturaSecao); //chama a nossa função só depois que o documento estiver completamente carregado
+    </script>
+
 </body>
 </html>

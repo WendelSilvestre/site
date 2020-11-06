@@ -7,18 +7,77 @@
 
 /*Tela Celular*/
 
+@media(max-width: 990px){
 body{
-  background-image: url('../img/fundo1.png');
+  background-image: url('../img/fundo_celular.png');
   background-color: #e4e4e6;
   background-size:  100%;
   background-repeat: no-repeat;
   font-family: 'Comic Sans';
-  font-size: 18px;
 }
 
+.site-title{
+  text-align: center;
+  margin-top: 60%;
+  color: #187ec7;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 5.2em;
+}
 
+.site-subtitle{
+  text-align: center;
+  color: #187ec7;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 1.6em;
+}
 
+#secao-01 {
+  height: 245px!important;
+}
 
+.icone-scroll{
+  position: absolute;
+  bottom: 2.5em;
+  width: 50px;
+  height: 50px;
+  background-color: #187ec7;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -25px;
+  cursor: pointer;
+}
+
+.scroll{
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.scroll-next {
+  transform: rotate(45deg);
+  margin: 14px 0 0 16.5px;
+}
+
+.biografia h1{
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 50%;
+  font-family: 'Comic Sans';
+  color: #187ec7;
+}
+
+.img-biografia{
+  display: flex;
+  object-position: center;
+  margin-left: 7%;
+  width: 95%;
+}
+
+}
 
 /* Tela computador*/
 @media(min-width: 990px){
