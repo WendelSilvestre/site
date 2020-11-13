@@ -32,7 +32,7 @@ body{
 }
 
 #secao-01 {
-  height: 245px!important;
+  height: 220px!important;
 }
 
 .icone-scroll{
@@ -66,7 +66,6 @@ body{
   font-size: 3em;
   text-align: center;
   margin-top: 50%;
-  font-family: 'Comic Sans';
   color: #187ec7;
 }
 
@@ -75,6 +74,30 @@ body{
   object-position: center;
   margin-left: 7%;
   width: 95%;
+}
+
+.img-perfil{
+  position: absolute;
+  top: 125%;
+  left: 30%;
+  width: 43%;
+}
+
+.biografia h2{
+  position: absolute;
+  top: 153%;
+  left: 17%;
+  line-height: 30px;
+  font-size: 1.5em;
+  font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.skill h1{
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 10%;
+  color: #187ec7;
 }
 
 }
@@ -147,7 +170,6 @@ header {
   font-size: 3em;
   text-align: center;
   margin-bottom: 4em;
-  font-family: 'Comic Sans';
   color: #187ec7;
 }
 
