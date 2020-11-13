@@ -9,14 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/469313654c.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection"/>
 </head>
+
 <body>
   <header>
 
@@ -25,47 +24,63 @@
       <div class="hide-on-large-only">
         <h1 class="site-title">Wendel Silvestre</h1>
           <h2 class="site-subtitle">Venha descobrir o quão incrível eu <br>sou</h2>
-      </div>
-      <span class="icone-scroll">
-        <span class="scroll-next scroll"></span>
-      </span>
+    </div>
+    <span class="icone-scroll">
+      <span class="scroll-next scroll"></span>
+    </span>
     </div>
 
-      <section class="biografia">
-        <div id="secao-02" class="secao" class="hide-on-large-only">
-          <h1 class="hide-on-large-only">Biografia</h1>
-            <img class="img-biografia hide-on-large-only"  src="./img/perfil.png">
-            <img  class="img-perfil circle hide-on-large-only" src="./img/img_perfil.jpg">
-              <h2 class="hide-on-large-only">Nome: Wendel De O. Silvestre <br>Idade: 17<br>Telefone: (11) 94919-7690<br>Email: wendelsilvestre9@gmail.com </h2>
-        </div>
-      </section>
+    <section class="biografia hide-on-large-only">
+      <div id="secao-02" class="secao" class="hide-on-large-only">
+        <h1 class="hide-on-large-only">Perfil</h1>
+          <img class="img-biografia hide-on-large-only"  src="./img/perfil.png">
+          <img  class="img-perfil circle hide-on-large-only" src="./img/img_perfil.jpg">
+        <h2 class="hide-on-large-only">Nome: Wendel De O. Silvestre <br>Idade: 17<br>Telefone: (11) 94919-7690<br>Email: wendelsilvestre9@gmail.com </h2>
+      </div>
+    </section>
 
-      <section class="skill">
-        <h1 class="hide-on-large-only">Skill</h1>
-
-
-      </section>
+    <section class="skill">
+      <h1 class="hide-on-large-only">Skill</h1>
+      <div class="hide-on-large-only">
+        <div class="carousel carousel-slider center">
+           <div class="carousel-item red white-text" href="#one!">
+             <h2>Programação</h2>
+             <p class="white-text">This is your first panel</p>
+           </div>
+           <div class="carousel-item amber white-text" href="#two!">
+             <h2>Second Panel</h2>
+             <p class="white-text">This is your second panel</p>
+           </div>
+           <div class="carousel-item green white-text" href="#three!">
+             <h2>Third Panel</h2>
+             <p class="white-text">This is your third panel</p>
+           </div>
+           <div class="carousel-item blue white-text" href="#four!">
+             <h2>Fourth Panel</h2>
+             <p class="white-text">This is your fourth panel</p>
+           </div>
+         </div>
+      </div>
+    </section>
 
     <!--Tela do computador-->
-        <div  class="hide-on-med-and-down">
-        <h1 class="site-title">.</h1>
-        <h2 class="site-subtitle"></h2>
-        </div>
-  </header>
+    <div  class="hide-on-med-and-down">
+      <h1 class="site-title"></h1>
+      <h2 class="site-subtitle"></h2>
+    </div>
 
-      <section class="biografia hide-on-med-and-down" >
-        <h2>Biografia</h2>
-          <div class="grid  hide-on-med-and-down">
-            <img class="img-biografia" src="./img/Biografia.png">
-                <img class="img-perfil" src="./img/perfil.png">
-              <h1>teste<h1>
-          </div>
-      </section>
+    <section class="biografia hide-on-med-and-down" >
+      <h2>Biografia</h2>
+      <div class="grid  hide-on-med-and-down">
+          <img class="img-biografia" src="./img/Biografia.png">
+          <img class="img-perfil" src="./img/perfil.png">
+            <h1>teste<h1>
+      </div>
+    </section>
 
     <section class="skill hide-on-med-and-down"> <!--mudar esse hide dps-->
         <h2>skill</h2>
     </section>
-
 
     <section class="contato hide-on-med-and-down" id="contato"> <!--mudar esse hide dps-->
       <h2>Contato</h2>
@@ -84,26 +99,43 @@
       </div>
     </section>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script>
-        var _AlturaDocumento = $(window).height(); //pega altura da janela
-      function AlturaSecao() {
-        $('.secao').height(_AlturaDocumento); //atribui o valor da variável a todas as divs com a classe secao
-      }
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Materialize compilado e minificado -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-      function ScrollSecao() {
-        console.log('entrou');
-        var body = $('html, body');
-        if($(this).parent('.secao').is('#secao-01')) {
-          //verifica se está na primeira seção e rola para a segunda
-          body.animate({scrollTop: _AlturaDocumento}, '500');
-        }
-      }
+
+<script>
+    var _AlturaDocumento = $(window).height(); //pega altura da janela
+    function AlturaSecao() {
+    $('.secao').height(_AlturaDocumento); //atribui o valor da variável a todas as divs com a classe secao
+}
+    function ScrollSecao() {
+    console.log('entrou');
+    var body = $('html, body');
+    if($(this).parent('.secao').is('#secao-01')) {
+    //verifica se está na primeira seção e rola para a segunda
+      body.animate({scrollTop: _AlturaDocumento}, '500');}}
 
       $('.icone-scroll').click(ScrollSecao); //chama a função na ação de click no ícone
-
       $(AlturaSecao); //chama a nossa função só depois que o documento estiver completamente carregado
-    </script>
+</script>
 
+<script>
+  var instance = M.Carousel.init({
+  fullWidth: true,
+  indicators: true
+});
+
+// Or with jQuery
+
+$('.carousel.carousel-slider').carousel({
+fullWidth: true,
+indicators: true
+});
+
+</script>
+
+</header>
 </body>
 </html>
