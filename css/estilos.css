@@ -32,7 +32,7 @@ body{
 }
 
 #secao-01 {
-  height: 220px!important;
+  height: 195px!important;
 }
 
 .icone-scroll{
@@ -72,7 +72,7 @@ body{
 .img-biografia{
   display: flex;
   object-position: center;
-  margin-left: 7%;
+  margin: auto;
   width: 95%;
 }
 
@@ -85,7 +85,7 @@ body{
 
 .biografia h2{
   position: absolute;
-  top: 153%;
+  top: 152%;
   left: 17%;
   line-height: 30px;
   font-size: 1.5em;
@@ -116,9 +116,64 @@ body{
 
 #rectangle h2{
   color: black;
-  font-size: 2em;
+  font-size: 2.1em;
   font-family: 'Annie Use Your Telescope', cursive;
+  margin-top: 11%;
+}
+
+.skills{
   width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+
+}
+
+.skill-name{
+  margin: 10px 0;
+  color: black;
+  font-size: 1.5em;
+  font-family: 'Annie Use Your Telescope', cursive;
+  padding-right: 83%;
+}
+
+.skill-bar{
+  height: 13px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+.skill-per{
+  height: 13px;
+  background-color: #187ec7;
+  border-radius: 8px;
+  width: 0;
+  transition: 2s ease;
+  position: relative;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
 }
 
 .ensino h1{
@@ -185,13 +240,11 @@ header {
 .grid h1{
   position: absolute;
   left: 30%;
-
 }
 
 
 .img-biografia {
   margin-left: 10%;
-
 }
 
 .skill h2{
