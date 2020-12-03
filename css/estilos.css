@@ -186,6 +186,14 @@ body{
   color: #187ec7;
 }
 
+.concurso h1{
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 50%;
+  color: #187ec7;
+}
+
 }
 
 /* Tela computador*/
