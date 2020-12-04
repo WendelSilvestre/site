@@ -121,7 +121,16 @@
 }
 }
 
-@media (max-width: 767px){
+@media (min-width: 360px){
+  .timeline:before{
+    left: 20px;
+    top: 5%;
+    height: 110vh!important;
+  }
+
+}
+
+@media (min-width: 320px){
 
 .timeline{
   width: 100%;
