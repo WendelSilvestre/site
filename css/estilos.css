@@ -186,13 +186,80 @@ body{
   color: #187ec7;
 }
 
-.concurso h1{
+.interesses h1{
   width: 100%;
   font-size: 3em;
   text-align: center;
   margin-top: 50%;
   color: #187ec7;
 }
+
+.quadrado{
+  border: 2px solid gray;
+  width: 75%;
+  height: 75%;
+  padding-top: 20px;
+  margin-bottom: 8%;
+  background-image: url('../img/background_cinza.jpg');
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.25), -1px -1px 4px 2px rgba(0,0,0,0.22);
+}
+
+.quadrado2{
+  border: 2px solid gray;
+  width: 75%;
+  height: 75%;
+  padding-top: 20px;
+  float: right;
+  margin-bottom: 8%;
+  background-image: url('../img/background_cinza.jpg');
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.25), -1px -1px 4px 2px rgba(0,0,0,0.22);
+}
+
+.quadrado3{
+  border: 2px solid gray;
+  width: 75%;
+  height: 75%;
+  padding-top: 20px;
+  float: left;
+  margin-bottom: 8%;
+  background-image: url('../img/background_cinza.jpg');
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.25), -1px -1px 4px 2px rgba(0,0,0,0.22);
+}
+
+.circulo{
+  border-radius: 100%;
+  border: 2px solid #328cd1;
+  width: 65px;
+  height: 65px;
+  font-size: 0.8em;
+  margin-left: 10%;
+  margin-bottom: 8%;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 60px 90px;
+}
+
+.circulo h1{
+  margin-top: 20%!important;
+  margin: auto;
+  color: #328cd1;
+}
+
+.circulo p{
+  color: #484c4f;
+  font-size: 2.5em;
+  margin-left: 30%;
+  margin-top: 12%;
+  font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.concursos h1{
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  color: #187ec7;
+}
+
 
 }
 
