@@ -260,6 +260,19 @@ body{
   color: #187ec7;
 }
 
+.concursos p{
+  color: color: #187ec7;
+  font-size: 2.5em;
+  margin-left: 10%;
+  margin-bottom: -8%;
+}
+
+.concursos h2{
+  color: color: #187ec7;
+  font-size: 1.5em;
+  margin-left: 10%;
+}
+
 
 }
 
