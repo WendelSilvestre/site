@@ -253,26 +253,39 @@ body{
   font-family: 'Annie Use Your Telescope', cursive;
 }
 
-.concursos h1{
+.sobre h1{
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  color: #187ec7
+}
+
+.sobre h2{
+  text-align: justify;
+  text-indent: 10%;
+  line-height: 1.5;
+  margin: 6%;
+  font-size: 1.15em;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.contatos h1{
   width: 100%;
   font-size: 3em;
   text-align: center;
   color: #187ec7;
 }
 
-.concursos p{
-  color: color: #187ec7;
-  font-size: 2.5em;
-  margin-left: 10%;
-  margin-bottom: -8%;
+.contatos a{
+  margin: 9%;
+  margin-bottom: 10%;
+  font-size: 3.2em;
+  color: #484c4f;
 }
 
-.concursos h2{
-  color: color: #187ec7;
-  font-size: 1.5em;
-  margin-left: 10%;
+.grid{
+  padding-left: 6%;
 }
-
 
 }
 
