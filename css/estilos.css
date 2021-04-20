@@ -67,7 +67,7 @@ body{
   width: 100%;
   font-size: 3em;
   text-align: center;
-  margin-top: 50%;
+  margin-top: 63%;
   color: #187ec7;
 }
 
@@ -80,7 +80,7 @@ body{
 
 .img-perfil{
   position: absolute;
-  top: 120%;
+  top: 115%;
   left: 28%;
   width: 45%;
 }
@@ -312,12 +312,12 @@ body{
 
 .img-perfil{
   position: absolute;
-  top: 105%;
+  top: 110%;
 }
 
 .biografia h2{
   position: absolute;
-  top: 135%;
+  top: 145%;
 }
 
 .sobre h1{
@@ -335,7 +335,7 @@ body{
 
 .skill h1{
   position: absolute;
-  top: 160%;
+  top: 165%;
 }
 
 .icone-scroll{
@@ -345,12 +345,12 @@ body{
 
 .img-perfil{
   position: absolute;
-  top: 95%;
+  top: 100%;
 }
 
 .biografia h2{
   position: absolute;
-  top: 120%;
+  top: 130%;
 }
 
 .sobre h1{
